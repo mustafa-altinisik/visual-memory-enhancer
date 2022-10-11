@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
+    @IBOutlet weak var homeButton: UIButton!
+    
+    
     @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var newRoundButton: UIButton!
     @IBOutlet weak var firstButton: UIButton!
@@ -59,6 +62,7 @@ class ViewController: UIViewController {
         //When main screen refreshes, new game button will be hidden and labels will be printed with updated values.
         newGameButton.alpha = 0
         newRoundButton.alpha = 0
+        homeButton.alpha = 0
         isGameContinuing = true
         displayHealth()
         scoreLabel.text = "Score: " + String(score)
@@ -238,6 +242,7 @@ class ViewController: UIViewController {
         isGameContinuing = false
         //Makes the new game button visible.
         newGameButton.alpha = 1
+        homeButton.alpha = 1
     }
     
     //This function is used to start a new game.

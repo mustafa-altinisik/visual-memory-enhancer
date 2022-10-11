@@ -247,14 +247,24 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-8o-pEo">
+                                <rect key="frame" x="172.5" y="677" width="69.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Home"/>
+                                <connections>
+                                    <segue destination="tRI-GG-mGM" kind="presentation" modalPresentationStyle="fullScreen" id="u4P-E7-lht"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="HBb-NI-dMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0dK-c4-ecu"/>
+                            <constraint firstItem="iQ4-8o-pEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1HZ-iN-ZtH"/>
                             <constraint firstItem="HBb-NI-dMZ" firstAttribute="top" secondItem="yu2-Hv-KZr" secondAttribute="bottom" constant="38" id="3kX-Bg-Ilv"/>
                             <constraint firstItem="3sO-xQ-UHK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xW-Kc-9jx"/>
                             <constraint firstItem="mgr-Hn-Bke" firstAttribute="top" secondItem="3sO-xQ-UHK" secondAttribute="bottom" constant="17" id="HMd-u7-ZSs"/>
+                            <constraint firstItem="iQ4-8o-pEo" firstAttribute="top" secondItem="E9s-Db-9Js" secondAttribute="bottom" constant="7.5" id="Yg0-Wt-V2p"/>
                             <constraint firstItem="mgr-Hn-Bke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alx-e9-zqV"/>
                             <constraint firstItem="Q5G-Qw-Oem" firstAttribute="top" secondItem="HBb-NI-dMZ" secondAttribute="bottom" constant="1.5" id="arF-o3-Tea"/>
                             <constraint firstItem="3sO-xQ-UHK" firstAttribute="top" secondItem="Q5G-Qw-Oem" secondAttribute="bottom" constant="7.5" id="bJs-1L-phV"/>
@@ -273,6 +283,7 @@
                         <outlet property="firstButton" destination="kXq-pC-p9w" id="JyZ-Sh-p5V"/>
                         <outlet property="fourthButton" destination="leP-XX-h9X" id="FcA-rs-Xdu"/>
                         <outlet property="healthLabel" destination="3sO-xQ-UHK" id="OuZ-2g-Viy"/>
+                        <outlet property="homeButton" destination="iQ4-8o-pEo" id="jgT-hG-xAH"/>
                         <outlet property="mainLabel" destination="zl0-pG-zAQ" id="GEJ-Bd-EIf"/>
                         <outlet property="newGameButton" destination="E9s-Db-9Js" id="83p-8c-dpV"/>
                         <outlet property="newRoundButton" destination="mgr-Hn-Bke" id="FWD-5Z-7E6"/>
@@ -285,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289.85507246376812" y="-3.3482142857142856"/>
+            <point key="canvasLocation" x="475" y="-3"/>
         </scene>
         <!--How To Play Page View Controller-->
         <scene sceneID="AHI-kX-IRs">
